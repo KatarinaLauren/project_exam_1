@@ -6,9 +6,9 @@ async function getLaunches() {
     try {
         const response = await fetch(url); 
         const results = await response.json(); 
-        console.log(results); 
+        // console.log(results); 
 
-        createHTML(results); 
+        createHTMLLaunches(results); 
         
     } catch(error) {
         console.log(error); 
@@ -18,7 +18,7 @@ async function getLaunches() {
 }
     getLaunches(); 
 
-    function createHTML(results) {
+    function createHTMLLaunches(results) {
         container.innerHTML= ""; 
         let counterFail = 0; 
         let counterSuccess = 0; 
@@ -28,8 +28,8 @@ async function getLaunches() {
                 if (results[i].success === true) counterSuccess++; 
               }
 
-              console.log(counterFail); 
-              console.log(counterSuccess); 
+            //   console.log(counterFail); 
+            //   console.log(counterSuccess); 
               
 
 
