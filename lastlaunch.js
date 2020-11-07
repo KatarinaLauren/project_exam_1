@@ -6,7 +6,7 @@ async function getLastLaunch() {
     try {
         const responseLastLaunch = await fetch(url4); 
         const resultsLastLaunch = await responseLastLaunch.json(); 
-        console.log(resultsLastLaunch); 
+        // console.log(resultsLastLaunch); 
 
         createHTMLLastLaunch(resultsLastLaunch); 
         
