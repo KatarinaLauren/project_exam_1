@@ -1,4 +1,4 @@
-const container3 = document.querySelector(".container3"); 
+// const container3 = document.querySelector(".container3"); 
 
 const url3 = "https://api.spacexdata.com/v4/launches/next"; 
 

@@ -1,4 +1,4 @@
-const container2 = document.querySelector(".container2"); 
+// const container2 = document.querySelector(".container2"); 
 
 const url2 = "https://api.spacexdata.com/v4/rockets"; 
 
@@ -6,7 +6,7 @@ async function getRockets() {
     try {
         const responseRockets = await fetch(url2); 
         const resultsRockets = await responseRockets.json(); 
-        console.log(resultsRockets); 
+        // console.log(resultsRockets); 
 
         createHTMLRockets(resultsRockets); 
         

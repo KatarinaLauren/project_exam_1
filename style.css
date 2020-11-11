@@ -1,0 +1,66 @@
+/* FONTS  
+font-family: 'Goldman', cursive;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/*---------------------- GENERAL ----------------*/
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* ----------------MOBILE----------------------- */
+
+h1 {
+  font-family: "Goldman", cursive;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 7vw;
+  text-align: center;
+}
+
+.container1 {
+  background: url(images/1.jpg) center center no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  min-height: 800px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.text-block1 {
+  width: 80%;
+  height: 190px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 10% auto;
+  border: 5px ridge #fff;
+  font-size: 1.5em;
+}
+.text-block2 {
+  width: 80%;
+  height: 190px;
+  margin: 10% auto;
+  text-align: center;
+  font-size: 0.75em;
+  border: 5px ridge #fff;
+  background-color: #0a0c1b;
+  display: hide;
+}
+
+/* .text-block2 p, */
+.text-block2 ul {
+  width: 55%;
+  text-align: left;
+}
+
+.portrait {
+  width: 30%;
+  float: right;
+  margin-top: 10%;
+  margin-right: 1%;
+}
