@@ -1,4 +1,4 @@
-// const container2 = document.querySelector(".container2"); 
+const rocketContainer = document.querySelector(".rocket-container"); 
 
 const url2 = "https://api.spacexdata.com/v4/rockets"; 
 
@@ -6,7 +6,7 @@ async function getRockets() {
     try {
         const responseRockets = await fetch(url2); 
         const resultsRockets = await responseRockets.json(); 
-        // console.log(resultsRockets); 
+        console.log(resultsRockets); 
 
         createHTMLRockets(resultsRockets); 
         
@@ -19,7 +19,7 @@ async function getRockets() {
 getRockets(); 
 
     function createHTMLRockets(resultsRockets) {
-        container2.innerHTML= ""; 
+        rocketContainer.innerHTML= ""; 
         
 
         for (let i = 0; i < resultsRockets.length; i++) {
@@ -29,7 +29,7 @@ getRockets();
 
                 
 
-                container2.innerHTML += `
+            rocketContainer.innerHTML += `
                 <div class="rockets">
                 <h2>${resultsRockets[i].name}</h2>
                 <p>Height: ${resultsRockets[i].height.meters} meters</p>
