@@ -1,6 +1,9 @@
 const container1 = document.querySelector(".container1"); 
 const container2 = document.querySelector(".container2"); 
 const container3 = document.querySelector(".container3"); 
+const container4 = document.querySelector(".container4"); 
+const container5 = document.querySelector(".container5"); 
+const container6 = document.querySelector(".container6"); 
 
 
     function changeTextBox() {
@@ -22,5 +25,9 @@ const container3 = document.querySelector(".container3");
         container1.addEventListener("click", changeTextBox);
         container2.addEventListener("click", changeTextBox); 
         container3.addEventListener("click", changeTextBox); 
+        container4.addEventListener("click", changeTextBox); 
+        container5.addEventListener("click", changeTextBox);
+        container6.addEventListener("click", changeTextBox);
+
 
 

@@ -6,7 +6,7 @@ async function getRockets() {
     try {
         const responseRockets = await fetch(url2); 
         const resultsRockets = await responseRockets.json(); 
-        console.log(resultsRockets); 
+        // console.log(resultsRockets); 
 
         createHTMLRockets(resultsRockets); 
         
@@ -15,7 +15,7 @@ async function getRockets() {
         container.innerHTML = "Error"; 
     
     }
-}
+}   
 getRockets(); 
 
     function createHTMLRockets(resultsRockets) {
@@ -23,8 +23,13 @@ getRockets();
         
 
         for (let i = 0; i < resultsRockets.length; i++) {
+            var flickrImages = resultsRockets[i].flickr_images; 
+
+
                
-              
+            for (let j = 0; j < flickrImages.length; j++) {
+                console.log(flickrImages[j]); 
+            }
 
 
                 

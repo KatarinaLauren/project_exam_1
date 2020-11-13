@@ -25,15 +25,25 @@ body {
   text-align: center;
 }
 
-.red {
+.fail {
   color: red;
 }
+.success {
+  color: green;
+}
+.bold {
+  font-weight: bold;
+}
+
+.float-left {
+  float: left;
+}
+
 
 /* ----------------MOBILE----------------------- */
 
 h1 {
-  font-family: "Goldman", cursive;
-  font-weight: bold;
+  font-family: "Goldman", cursive; */
   letter-spacing: 0.1em;
   font-size: 7vw;
   text-align: center;
@@ -46,6 +56,13 @@ h1 {
   min-height: 800px;
   margin: 0;
   padding-top: 25px;
+}
+
+.rocket-icon {
+  width: 15vw; 
+  display: block; 
+  padding: 0; 
+  margin: -7% auto; 
 }
 
 .text-block1,
@@ -74,8 +91,8 @@ h1 {
   font-size: 1em;
   color: #fff;
   text-decoration: underline;
-  padding: 2em;
-  /* margin: 15px; */
+  padding: 1.5em;
+  margin: 0;
 }
 
 .inner-text {
@@ -100,3 +117,11 @@ h1 {
   margin: 0 auto;
   margin-bottom: 3%;
 }
+
+iframe {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10%;
+}
+
+
