@@ -34,9 +34,19 @@ body {
 .bold {
   font-weight: bold;
 }
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline; 
+}
 
 .float-left {
   float: left;
+}
+
+.inline {
+  display: inline; 
 }
 
 
@@ -49,7 +59,7 @@ h1 {
   text-align: center;
 }
 
-.container {
+.background {
   background: url(images/1.jpg) center center no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
@@ -73,6 +83,15 @@ h1 {
   border: 5px solid #fff;
   cursor: pointer;
   text-align: center;
+  position: relative; 
+}
+
+.close {
+  font-size: 100px; 
+  /* position: absolute; 
+  top: 0; 
+  right: 0; 
+  width: 100%;  */
 }
 
 .text-block2 {
@@ -124,4 +143,9 @@ iframe {
   margin-bottom: 10%;
 }
 
+a.link-inside-text {
+  padding: 0; 
+  display: inline; 
+  text-decoration: none; 
+}
 
