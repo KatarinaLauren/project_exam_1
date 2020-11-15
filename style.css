@@ -59,14 +59,47 @@ h1 {
   text-align: center;
 }
 
-.background {
-  background: url(images/1.jpg) center center no-repeat;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  min-height: 800px;
-  margin: 0;
-  padding-top: 25px;
+
+.background1 {
+  background-image: url(images/1.jpg); 
+  background-attachment: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 500px; 
 }
+
+ .background2 {
+  background-image: url(images/modis_wonderglobe_lrg.jpg);  
+  background-attachment: initial; 
+  background-position: center; 
+  background-repeat: no-repeat;   
+  background-size: auto 300px; 
+}  
+.background3 {
+  background-image: url(images/pia22946-16.jpg); 
+  background-attachment: initial; 
+  background-position: center; 
+  background-repeat: no-repeat;   
+  background-size: auto 300px;
+}
+
+.background4 {
+  background-image: url(images/47720639732_e04b2a9ed7_o.jpg);  
+  background-attachment: initial; 
+  background-position: center; 
+  background-repeat: no-repeat;   
+  background-size: 400px auto;
+}
+
+.background5 {
+  background-image: url(images/32394688095_a3339f3c6d_o.jpg); 
+  background-attachment: initial; 
+  background-position: center; 
+  background-repeat: no-repeat;   
+  background-size: 600px auto;
+}
+
+
 
 .rocket-icon {
   width: 15vw; 
@@ -79,7 +112,7 @@ h1 {
 .text-block2 {
   width: 80%;
   margin: 10% auto;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 5px solid #fff;
   cursor: pointer;
   text-align: center;
@@ -87,15 +120,15 @@ h1 {
 }
 
 .close {
-  font-size: 100px; 
-  /* position: absolute; 
-  top: 0; 
-  right: 0; 
-  width: 100%;  */
+  position: absolute; 
+  top: -2%; 
+  right: 2%; 
+  font-weight: bold; 
+  font-size: 1em; 
 }
 
 .text-block2 {
-  font-size: 0.85em;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .text-block2 h3 {
   font-size: 1.3em;
