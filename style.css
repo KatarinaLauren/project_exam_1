@@ -52,6 +52,32 @@ body {
 
 /* ----------------MOBILE----------------------- */
 
+footer {
+  margin-bottom: 5%;
+  padding-top: 3%; 
+  border-top: 1px solid #fff; 
+  text-align: center; 
+}
+
+footer p {
+  width: 88%; 
+  margin: 0 auto;  
+  font-size: 0.75em; 
+  text-align: left; 
+
+}
+
+footer a {
+  display: block; 
+  color: #fff; 
+  font-weight: bold; 
+  font-size: 0.85em; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+}
+
+/* ------------------TIMELINE PAGE----------------- */
+
 h1 {
   font-family: "Goldman", cursive; */
   letter-spacing: 0.1em;
@@ -59,57 +85,42 @@ h1 {
   text-align: center;
 }
 
-
-.background1 {
-  background-image: url(images/1.jpg); 
+.background1, .background2, .background3, .background4, .background5, .background6 {
   background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 300px; 
+}
+
+.background1 {
+  background-image: url(images/1.jpg); 
   background-size: auto 500px; 
 }
 
  .background2 {
-  background-image: url(images/modis_wonderglobe_lrg_web.jpg);  
-  background-attachment: initial; 
-  background-position: center; 
-  background-repeat: no-repeat;   
-  background-size: auto 300px; 
+  background-image: url(images/modis_wonderglobe_lrg_web.jpg);    
 }  
+
 .background3 {
   background-image: url(images/pia22946-16_web.jpg); 
-  background-attachment: initial; 
-  background-position: center; 
-  background-repeat: no-repeat;   
-  background-size: auto 300px;
 }
+
 .background4 {
   background-image: url(images/37912591295_7c30a77efd_o_web.jpg);  
-  background-attachment: initial; 
-  background-position: center; 
-  background-repeat: no-repeat;   
-  background-size: auto 300px;
 }
 
 .background5 {
-  background-image: url(images/47720639732_e04b2a9ed7_o_web.jpg);  
-  background-attachment: initial; 
-  background-position: center; 
-  background-repeat: no-repeat;   
+  background-image: url(images/47720639732_e04b2a9ed7_o_web.jpg);     
   background-size: 400px auto;
 }
 
 .background6 {
-  background-image: url(images/32394688095_a3339f3c6d_o_web.jpg); 
-  background-attachment: initial; 
-  background-position: center; 
-  background-repeat: no-repeat;   
+  background-image: url(images/32394688095_a3339f3c6d_o_web.jpg);   
   background-size: 600px auto;
 }
 
-
-
 .rocket-icon {
-  width: 15vw; 
+  width: 12vw; 
   display: block; 
   padding: 0; 
   margin: -7% auto; 
