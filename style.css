@@ -69,30 +69,37 @@ h1 {
 }
 
  .background2 {
-  background-image: url(images/modis_wonderglobe_lrg.jpg);  
+  background-image: url(images/modis_wonderglobe_lrg_web.jpg);  
   background-attachment: initial; 
   background-position: center; 
   background-repeat: no-repeat;   
   background-size: auto 300px; 
 }  
 .background3 {
-  background-image: url(images/pia22946-16.jpg); 
+  background-image: url(images/pia22946-16_web.jpg); 
+  background-attachment: initial; 
+  background-position: center; 
+  background-repeat: no-repeat;   
+  background-size: auto 300px;
+}
+.background4 {
+  background-image: url(images/37912591295_7c30a77efd_o_web.jpg);  
   background-attachment: initial; 
   background-position: center; 
   background-repeat: no-repeat;   
   background-size: auto 300px;
 }
 
-.background4 {
-  background-image: url(images/47720639732_e04b2a9ed7_o.jpg);  
+.background5 {
+  background-image: url(images/47720639732_e04b2a9ed7_o_web.jpg);  
   background-attachment: initial; 
   background-position: center; 
   background-repeat: no-repeat;   
   background-size: 400px auto;
 }
 
-.background5 {
-  background-image: url(images/32394688095_a3339f3c6d_o.jpg); 
+.background6 {
+  background-image: url(images/32394688095_a3339f3c6d_o_web.jpg); 
   background-attachment: initial; 
   background-position: center; 
   background-repeat: no-repeat;   
