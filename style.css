@@ -49,6 +49,12 @@ body {
   display: inline; 
 }
 
+a {
+  color: #fff; 
+  text-decoration: none; 
+
+}
+
 
 /* ----------------MOBILE----------------------- */
 
@@ -64,10 +70,8 @@ body {
 #navbar a {
   float: left;
   display: block;
-  color: #fff;
   text-align: center;
-  width: 25%; 
-  text-decoration: none;
+  width: 25%;
   padding: 3% 0; 
   font-size: 0.8em; 
 }
@@ -102,7 +106,6 @@ footer p {
 
 footer a {
   display: block; 
-  color: #fff; 
   font-weight: bold; 
   font-size: 0.85em; 
   padding-top: 10px; 
@@ -256,3 +259,14 @@ a.link-inside-text {
   text-decoration: none; 
 }
 
+/* -------------------REFERENCES--------------- */
+
+#references {
+  width: 90%; 
+  margin: 0 auto; 
+}
+#references a {
+  display: block; 
+  padding: 2%; 
+  font-size: 0.85em; 
+}
