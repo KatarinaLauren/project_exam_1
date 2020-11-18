@@ -1,4 +1,4 @@
-const rocketContainer = document.querySelector(".rocket-container"); 
+const rocketContainer = document.querySelector(".rocket-container");
 
 const url2 = "https://api.spacexdata.com/v4/rockets"; 
 
@@ -23,27 +23,44 @@ getRockets();
         
 
         for (let i = 0; i < resultsRockets.length; i++) {
+
+
+
             var flickrImages = resultsRockets[i].flickr_images; 
+            // console.log(flickrImages); 
+  
 
-
-               
             for (let j = 0; j < flickrImages.length; j++) {
-                console.log(flickrImages[j]); 
+
+                // console.log(flickrImages[j])
+
+                if (j ===1) {
+                    break; 
+                }
+                // console.log(flickrImages[0]); 
+                const images = flickrImages[0]
+
+                rocketContainer.innerHTML += `
+                <div class="rocket-div">
+                <h2 class="rocket-name">${resultsRockets[i].name}</h2>
+
+                <div class="rocket-info">
+                <p><span class="bold">Height:</span> ${resultsRockets[i].height.meters} meters</p>
+                <p><span class="bold">Weight:</span> ${resultsRockets[i].mass.kg} kg</p>
+                <p><span class="bold">First flight:</span> ${resultsRockets[i].first_flight}</p>
+                <p><span class="bold">Cost to launch:</span> $ ${resultsRockets[i].cost_per_launch}</p>
+                </div>
+
+                <p class="rocket-description">${resultsRockets[i].description}</p>
+                <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
+                </div>
+        
+                <div class="rocket-images">
+                <img class="rocket-image" src="${images}"></img>
+                <p class="italic">${resultsRockets[i].name}</p>
+                </div>
+                 `
+
             }
-
-
-                
-
-            rocketContainer.innerHTML += `
-                <div class="rockets">
-                <h2>${resultsRockets[i].name}</h2>
-                <p>Height: ${resultsRockets[i].height.meters} meters</p>
-                <p>Weight: ${resultsRockets[i].mass.kg} kg</p>
-                <p>First flight: ${resultsRockets[i].first_flight}</p>
-                <p>Cost to launch: $ ${resultsRockets[i].cost_per_launch}</p>
-                <p>${resultsRockets[i].description}</p>
-                
-                </div> `
-            
         }
     }
