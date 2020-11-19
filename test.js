@@ -33,7 +33,14 @@ async function getLaunches() {
         for (let i = 0; i < results.length; i++) {
                 if (results[i].success === false) counterFail++;
                 if (results[i].success === true) counterSuccess++; 
-        }            
+        }
+         
+          
+        //   array.forEach(item) {
+        //       const rocket = getRocketDetails(item.id);
+        //   }
+
+              
 
             //   console.log(counterFail); 
             //   console.log(counterSuccess); 
@@ -48,7 +55,7 @@ async function getLaunches() {
         function createHTMLLaunches(results) {
             launchContainer.innerHTML= ""; 
             for (let i = 0; i < results.length; i++) {
-
+                // console.log(results[i].name);
                 let launchSuccess = "a failure"; 
                 let launchDetails ="No information available"
 
@@ -62,6 +69,7 @@ async function getLaunches() {
                 }
 
                 let rocketID = results[i].rocket; 
+                // console.log(rocketID); 
 
                 let rocketUrl = "https://api.spacexdata.com/v4/rockets/" + rocketID; 
 
@@ -81,7 +89,7 @@ async function getLaunches() {
                         <p>Launchdate: ${results[i].date_local}</p>
                         <p>Rocket: ${rocket}</p>
                         <p>Launchname: ${results[i].name}</p>
-                        <p>Details: ${launchDetails}.</p>
+                        <p>Details: ${launchDetails}</p>
                         <p>This launch was ${launchSuccess}</p> 
                         
                         ` 

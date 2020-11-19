@@ -1,4 +1,5 @@
-// const container3 = document.querySelector(".container3"); 
+
+ var countDown = document.querySelector(".countdown")
 
 const url3 = "https://api.spacexdata.com/v4/launches/next"; 
 
@@ -12,7 +13,8 @@ async function getNextLaunch() {
         
     } catch(error) {
         console.log(error); 
-        container.innerHTML = "Error"; 
+        countDown.innerHTML = "Next launch not found"; 
+        countDown.style.color="red"
     
     }
 
@@ -34,25 +36,25 @@ getNextLaunch();
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            var countDown = document.querySelector(".countDown")
+           
 
             countDown.innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";; 
+            + minutes + "m " + seconds + "s ";;
 
 
             if (distance < 0) {
                 clearInterval(x);
-                countDown = "EXPIRED";
+                countDown.innerHTML = "No planned launch";
               }
             }, 1000);
 
 
-            container3.innerHTML += `
-            <div class="">
-            <h2>Next launch: ${formattedLaunchDate} </h2>
-            <p>${resultsNextLaunch.details}</p>          
+            // countdownContainer.innerHTML += `
+            // <div class="">
+            // <h2>Next launch: ${formattedLaunchDate} </h2>
+            // <p>${resultsNextLaunch.details}</p>          
             
-            </div> `
+            // </div> `
             
         
     }
