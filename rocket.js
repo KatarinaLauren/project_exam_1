@@ -6,13 +6,13 @@ async function getRockets() {
     try {
         const responseRockets = await fetch(url2); 
         const resultsRockets = await responseRockets.json(); 
-        // console.log(resultsRockets); 
+        console.log(resultsRockets); 
 
         createHTMLRockets(resultsRockets); 
         
     } catch(error) {
         console.log(error); 
-        container.innerHTML = "Error"; 
+        rocketContainer.innerHTML = "Error"; 
     
     }
 }   
