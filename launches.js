@@ -47,13 +47,19 @@ async function getLaunches() {
 
         function createHTMLLaunches(results) {
             launchContainer.innerHTML= ""; 
+
             for (let i = 0; i < results.length; i++) {
 
+
+                 // FORMAT LAUNCH DATE 
+
+                let launchDates = results[i].date_local; 
+                const launchDateSet = new Date(launchDates);
+                const formatLaunchDate = launchDateSet.toDateString();  
                 
+                // SET LAUNCH SUCCESS VALUE
 
                 let launchSuccess = "&#x274C;This launch was a failure"; 
-                let launchDetails ="No information available"
-
 
 
                 if(results[i].success === true) {
@@ -61,9 +67,14 @@ async function getLaunches() {
                        
                 }
 
+                // SET DETAILS VALUE 
+                let launchDetails ="No information available"
+
                 if(results[i].details){
                     launchDetails = results[i].details; 
                 }
+
+                // SET LAUNCH VIDEO VALUE 
 
                 let launchVideo = ""; 
                 let launchVideoMessage = "No video material available for this launch"; 
@@ -73,6 +84,8 @@ async function getLaunches() {
                 }
 
 
+
+                // GET &  DISPLAY ROCKET NAME  
 
                 let rocketID = results[i].rocket; 
 
@@ -88,14 +101,16 @@ async function getLaunches() {
 
                         if(rocketResults.name) {
                             rocket = rocketResults.name; 
-                        }
+                        }                      
+
+                        // CREATE HTML                                   
 
                         launchContainer.innerHTML += `
-                        <p><i class="far fa-calendar"></i> ${results[i].date_local}</p>
+                        <p><i class="far fa-calendar"></i> ${formatLaunchDate}</p>
                         <p><i class="fas fa-rocket"></i> ${rocket}</p>
-                        <p>Launchname: ${results[i].name}</p>
-                        <p>Details: ${launchDetails}.</p>
+                        <p>Launch name: ${results[i].name}</p>
                         <p> ${launchSuccess}</p> 
+                        <p>Details: ${launchDetails}.</p>
                         <a href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
                         
                         ` 
