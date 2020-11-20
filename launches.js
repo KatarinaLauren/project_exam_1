@@ -49,17 +49,30 @@ async function getLaunches() {
             launchContainer.innerHTML= ""; 
             for (let i = 0; i < results.length; i++) {
 
-                let launchSuccess = "a failure"; 
+                
+
+                let launchSuccess = "&#x274C;This launch was a failure"; 
                 let launchDetails ="No information available"
 
 
+
                 if(results[i].success === true) {
-                    launchSuccess = "successful"; 
+                    launchSuccess = "&#x2705; This launch was successful"; 
+                       
                 }
 
                 if(results[i].details){
                     launchDetails = results[i].details; 
                 }
+
+                let launchVideo = ""; 
+                let launchVideoMessage = "No video material available for this launch"; 
+                if(results[i].links.webcast) {
+                    launchVideo = results[i].links.webcast; 
+                    launchVideoMessage = "Click to watch launch video!"; 
+                }
+
+
 
                 let rocketID = results[i].rocket; 
 
@@ -78,11 +91,12 @@ async function getLaunches() {
                         }
 
                         launchContainer.innerHTML += `
-                        <p>Launchdate: ${results[i].date_local}</p>
-                        <p>Rocket: ${rocket}</p>
+                        <p><i class="far fa-calendar"></i> ${results[i].date_local}</p>
+                        <p><i class="fas fa-rocket"></i> ${rocket}</p>
                         <p>Launchname: ${results[i].name}</p>
                         <p>Details: ${launchDetails}.</p>
-                        <p>This launch was ${launchSuccess}</p> 
+                        <p> ${launchSuccess}</p> 
+                        <a href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
                         
                         ` 
 

@@ -1,5 +1,6 @@
 const rocketContainer = document.querySelector(".rocket-container");
 
+
 const url2 = "https://api.spacexdata.com/v4/rockets"; 
 
 async function getRockets() {
@@ -20,6 +21,7 @@ getRockets();
 
     function createHTMLRockets(resultsRockets) {
         rocketContainer.innerHTML= ""; 
+    
         
 
         for (let i = 0; i < resultsRockets.length; i++) {
@@ -38,7 +40,8 @@ getRockets();
                     break; 
                 }
                 // console.log(flickrImages[0]); 
-                const images = flickrImages[0]
+                const images = flickrImages[0]; 
+
 
                 rocketContainer.innerHTML += `
                 <div class="rocket-div">
@@ -53,14 +56,24 @@ getRockets();
 
                 <p class="rocket-description">${resultsRockets[i].description}</p>
                 <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
-                </div>
+                
         
                 <div class="rocket-images">
                 <img class="rocket-image" src="${images}"></img>
                 <p class="italic">${resultsRockets[i].name}</p>
                 </div>
+                </div>
                  `
+
+        
+
+                
+
+
+
+          
 
             }
         }
     }
+
