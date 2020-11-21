@@ -11,11 +11,62 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+    <h1>Contact us</h1>
+    <main class="contact-container">
+        <form id="contact-form">
+            <div>
+                <label>
+                    First name*
+                    <input name="firstName" id="first-name" required />
+                </label>
+                <div class="form-error" id="first-name-error">Please enter your first name</div>
+            </div>
 
-    <div class="">
+            <div>
+                <label>
+                    Last name
+                    <input name="lastName" id="last-name" />
+                </label>
+                <div class="form-error" id="last-name-error">Last name must be at least 3 characters</div>
+            </div>
+
+            <div>
+                <label>
+                    Email*
+                    <input type="email" name="email" id="email" required />
+                </label>
+                <div class="form-error" id="email-error">Please enter a valid email address</div>
+            </div>
+
+            <div>
+                <label>
+                    Message
+                    <textarea id="message" name="message" rows="10" placeholder="Write your message here..."></textarea>
+                </label>
+            </div>
+
+            <button class="submit-button">Submit</button>
+            <p class="italic required-text">Fields marked with * are required</p>
+        </form>
         
-    </div>
+    </main>
+    <div id="navbar" class="sticky">
+        <a href="index.html" >Timeline</a>
+        <a href="rockets.html"> Rockets</a>
+        <a href="launches.html">Launches</a>
+        <a href="contact.html" id="active">Contact</a>
+      </div>
 
-    <script src="rocket.js"></script>
+    <footer>
+        <p class="italic">This site is a private school project and is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Inc (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners. </p>
+        <br>
+        <p>For all photos used on site: Photo credit NASA and/or SpaceX.</p>
+        <br>
+        <p>All information on this site is cited from external pages.</p>
+        <a href="references.html">Links to all information sources</a>
+    </footer>
+  
+
+    <script src="contact.js"></script>
 </body>
 </html>

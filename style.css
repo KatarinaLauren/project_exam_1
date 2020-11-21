@@ -5,6 +5,9 @@ font-family: 'Roboto', sans-serif;
 */
 
 /*---------------------- GENERAL ----------------*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #000;
@@ -74,7 +77,7 @@ a {
   float: left;
   display: block;
   text-align: center;
-  width: 24%;
+  width: 25%;
   padding: 2% 0;
   font-size: 0.8em;
 }
@@ -164,13 +167,6 @@ h1 {
   background-image: url(images/32394688095_a3339f3c6d_o_web.jpg);
   background-size: 600px auto;
   background-position: center bottom;
-}
-
-.rocket-icon {
-  width: 30vw;
-  display: block;
-  padding: 0;
-  margin: -7% auto;
 }
 
 .text-block1,
@@ -356,4 +352,129 @@ a.link-inside-text {
 .rocket-images p {
   text-align: center;
   font-size: 0.85em;
+}
+
+/* -----------CONTACT US ----------- */
+
+.contact-container {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+form {
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding: 5% 2%;
+  padding-bottom: 0;
+  background-color: rgba(256, 256, 256, 0.1);
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-radius: 20px;
+  min-height: 100px;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+input:focus {
+  background-color: #cffce5;
+  outline: none;
+  border: #033629;
+}
+
+.submit-button {
+  background-color: #033629;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 50%;
+  padding: 1em;
+  color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submit-button:active {
+  background-color: #cffce5;
+  color: #000;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+.form-error {
+  display: none;
+  color: #f20505;
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+
+.required-text {
+  font-size: 0.75em;
+  margin-left: 5%;
+}
+textarea {
+  width: 100%;
+}
+#message::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.thanks-message {
+  text-align: center;
+}
+
+/* ----------------------- PADS ------------------  */
+
+@media only screen and (min-width: 600px) {
+}
+.background1,
+.background2,
+.background3,
+.background4,
+.background5,
+.background6 {
+  background-attachment: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 300px;
+}
+
+.background1 {
+  background-image: url(images/1.jpg);
+  background-size: auto 500px;
+  padding-top: 50px;
+}
+
+.background2 {
+  background-image: url(images/modis_wonderglobe_lrg_web.jpg);
+}
+
+.background3 {
+  background-image: url(images/pia22946-16_web.jpg);
+}
+
+.background4 {
+  background-image: url(images/37912591295_7c30a77efd_o_web.jpg);
+}
+
+.background5 {
+  background-image: url(images/47720639732_e04b2a9ed7_o_web.jpg);
+  background-size: 400px auto;
+}
+
+.background6 {
+  background-image: url(images/32394688095_a3339f3c6d_o_web.jpg);
+  background-size: 600px auto;
+  background-position: center bottom;
+}
+
+@media only screen and (min-width: 800px) {
 }
