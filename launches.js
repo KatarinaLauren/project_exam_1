@@ -9,7 +9,7 @@ async function getLaunches() {
     try {
         const response = await fetch(url); 
         const results = await response.json(); 
-        // console.log(results); 
+        console.log(results); 
 
         createHTMLCounter(results); 
         createHTMLLaunches(results); 
@@ -35,8 +35,8 @@ async function getLaunches() {
                 if (results[i].success === true) counterSuccess++; 
         }            
 
-            //   console.log(counterFail); 
-            //   console.log(counterSuccess); 
+              console.log(counterFail); 
+              console.log(counterSuccess); 
               
             launchCounter.innerHTML += `
             <p>Since the start in 2002, SpaceX has launched <span class="bold">${results.length}</span>rockets</p>
@@ -50,12 +50,13 @@ async function getLaunches() {
 
             for (let i = 0; i < results.length; i++) {
 
-
                  // FORMAT LAUNCH DATE 
 
                 let launchDates = results[i].date_local; 
                 const launchDateSet = new Date(launchDates);
                 const formatLaunchDate = launchDateSet.toDateString();  
+
+                const launchYear = launchDateSet.getFullYear(); 
                 
                 // SET LAUNCH SUCCESS VALUE
 
@@ -95,7 +96,7 @@ async function getLaunches() {
                    try{
                          const rocketResponse = await fetch(rocketUrl); 
                          const rocketResults = await rocketResponse.json(); 
-                        //  console.log(rocketResults); 
+                         console.log(rocketResults); 
 
                         let rocket = "Unknown"
 
@@ -106,20 +107,21 @@ async function getLaunches() {
                         // CREATE HTML                                   
 
                         launchContainer.innerHTML += `
+                        <div class="launch-div hide">
                         <p><i class="far fa-calendar"></i> ${formatLaunchDate}</p>
                         <p><i class="fas fa-rocket"></i> ${rocket}</p>
                         <p>Launch name: ${results[i].name}</p>
                         <p> ${launchSuccess}</p> 
                         <p>Details: ${launchDetails}.</p>
                         <a href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
-                        
-                        ` 
+                        </div>
+                        `
 
                     } catch(error) {
                             console.log(error); 
                         
                         }
-                
+
                   }
                   getRocketDetails();          
             
