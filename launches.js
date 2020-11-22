@@ -31,17 +31,20 @@ async function getLaunches() {
       
 
         for (let i = 0; i < results.length; i++) {
+                       
                 if (results[i].success === false) counterFail++;
                 if (results[i].success === true) counterSuccess++; 
         }            
 
-              console.log(counterFail); 
-              console.log(counterSuccess); 
+            //   console.log(counterFail); 
+            //   console.log(counterSuccess); 
               
             launchCounter.innerHTML += `
-            <p>Since the start in 2002, SpaceX has launched <span class="bold">${results.length}</span>rockets</p>
-            <p>Successful launches:<span class="success"> ${counterSuccess}</span></p>
-            <p>Failed launches: <span class="fail">${counterFail}</span></p>`; 
+            <h2>Launches</h2>
+            <p>Since 2006, SpaceX has launched <span class="bold big"> ${results.length} </span>rockets</p>
+            <p>Successful launches:<span class="bold big"> ${counterSuccess}</span></p>
+            <p>Failed launches: <span class="bold big">${counterFail}</span></p>`
+    
               
         }
 
@@ -84,6 +87,13 @@ async function getLaunches() {
                     launchVideoMessage = "Click to watch launch video!"; 
                 }
 
+                // SET LAUNCH NAME VALUE 
+
+                let launchName = "-"; 
+                if(results[i].name){
+                    launchName = results[i].name; 
+                }
+
 
 
                 // GET &  DISPLAY ROCKET NAME  
@@ -96,24 +106,25 @@ async function getLaunches() {
                    try{
                          const rocketResponse = await fetch(rocketUrl); 
                          const rocketResults = await rocketResponse.json(); 
-                         console.log(rocketResults); 
+                        //  console.log(rocketResults); 
 
                         let rocket = "Unknown"
 
                         if(rocketResults.name) {
                             rocket = rocketResults.name; 
-                        }                      
+                        }    
+                        
 
                         // CREATE HTML                                   
 
                         launchContainer.innerHTML += `
-                        <div class="launch-div hide">
-                        <p><i class="far fa-calendar"></i> ${formatLaunchDate}</p>
+                        <div class="launch-div ${launchYear} hide">
+                        <p class="bold"><i class="far fa-calendar"></i> ${formatLaunchDate}</p>
                         <p><i class="fas fa-rocket"></i> ${rocket}</p>
-                        <p>Launch name: ${results[i].name}</p>
+                        <p>Launch name: ${launchName}</p>
                         <p> ${launchSuccess}</p> 
                         <p>Details: ${launchDetails}.</p>
-                        <a href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
+                        <a class="bold underline"href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
                         </div>
                         `
                         const launchDivs = document.querySelectorAll(".launch-div"); 
@@ -122,7 +133,7 @@ async function getLaunches() {
                             // console.log(launchDivs[j].classList[1]); 
                         
 
-                            document.querySelector(".sort").addEventListener("change", function(event){
+                            document.querySelector(".sort-year").addEventListener("change", function(event){
                             if(event.target.value === `${launchDivs[j].classList[1]}`) {
                                 launchDivs[j].classList.remove("hide");
         

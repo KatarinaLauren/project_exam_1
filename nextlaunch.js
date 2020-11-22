@@ -7,7 +7,7 @@ async function getNextLaunch() {
     try {
         const responseNextLaunch = await fetch(url3); 
         const resultsNextLaunch = await responseNextLaunch.json(); 
-        console.log(resultsNextLaunch); 
+        // console.log(resultsNextLaunch); 
 
         createHTMLNextLaunch(resultsNextLaunch); 
         
