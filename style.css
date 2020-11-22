@@ -5,6 +5,7 @@ font-family: 'Roboto', sans-serif;
 */
 
 /*---------------------- GENERAL ----------------*/
+
 * {
   box-sizing: border-box;
 }
@@ -324,7 +325,7 @@ a.link-inside-text {
   padding-left: 5%;
 }
 
-.rocket-description {
+.rocket-description p {
   width: 80%;
   margin: 0 auto;
   font-size: 0.9em;
@@ -349,6 +350,7 @@ a.link-inside-text {
   font-size: 0.85em;
 }
 /* ----------- LAUNCHES ----------- */
+
 /* .launches-background {
   background-image: url(images/49965212542_399073e949_o.jpg);
   background-attachment: initial;
@@ -512,10 +514,8 @@ textarea {
   text-align: center;
 }
 
-/* ----------------------- PADS ------------------  */
-
 @media only screen and (min-width: 600px) {
-  /* --------------------NAVBAR------------------------ */
+  /* --------------------NAVBAR PAD------------------------ */
 
   #navbar {
     border: 2px solid #a4a1a1;
@@ -524,11 +524,12 @@ textarea {
     font-size: 1em;
   }
 
-  /* ------------------FOOTER------------------------- */
+  /* ------------------FOOTER PAD------------------------- */
 
   footer {
     margin-bottom: 7%;
     padding-top: 4%;
+    padding-bottom: 2%;
   }
 
   footer p {
@@ -542,7 +543,7 @@ textarea {
     padding-bottom: 25px;
   }
 
-  /* ------------------TIMELINE PAGE----------------- */
+  /* ------------------TIMELINE PAGE PAD----------------- */
 
   .background1 {
     background-size: 700px auto;
@@ -610,6 +611,165 @@ textarea {
   iframe {
     width: 80%;
     min-height: 230px;
+  }
+  /* -------------------REFERENCES PAD--------------- */
+
+  #references {
+    width: 80%;
+  }
+  #references a {
+    font-size: 1em;
+  }
+  /* -------------------ROCKETS PAD---------------------  */
+  .rocket-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rocket-div {
+    width: 47%;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .rocket-info {
+    width: 60%;
+  }
+
+  .rocket-info p {
+    padding-left: 5%;
+  }
+
+  .rocket-description p {
+    font-size: 0.9em;
+  }
+
+  .rocket-description {
+    height: 190px;
+  }
+
+  .rocket-image {
+    height: 300px;
+  }
+
+  .rocket-images p {
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  /* ------------- LAUNCHES PAD ------------- */
+
+  .launches-background {
+    background-image: url(images/2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    margin-bottom: -10%;
+    min-height: 1200px;
+  }
+  .next-launch {
+    margin-top: 50px;
+  }
+
+  .next-launch a {
+    font-size: 0.9em;
+  }
+  .next-launch h3 {
+    font-size: 1.3em;
+    text-shadow: 1px 1px #000;
+  }
+  .countdown {
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 50%;
+    letter-spacing: 5px;
+    text-shadow: None;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 3%;
+  }
+
+  .launch-counter {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
+
+  .sort label {
+    font-size: 1.5em;
+    text-shadow: 1px 1px #000;
+  }
+  .sort-year {
+    margin-top: 20px;
+    width: 35%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  option {
+    padding: 5px;
+    margin: 2px;
+  }
+  .launch-div {
+    width: 80%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+  }
+  /* -----------CONTACT US PAD ----------- */
+
+  .contact-container {
+    margin-bottom: -10%;
+    margin-top: 0;
+    background-image: url(images/45473444314_413a344dcb_o.jpg);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  form {
+    width: 60%;
+    padding-top: 2%;
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
+  /* input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 1em;
+  } */
+
+  /* input:focus {
+    background-color: #cffce5;
+    outline: none;
+    border: #033629;
+  } */
+
+  .submit-button {
+    font-size: 1.2em;
+    padding: 0.7em;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  .form-error {
+    font-size: 1em;
+    margin-top: 4px;
+  }
+
+  .required-text {
+    font-size: 0.9em;
   }
 }
 

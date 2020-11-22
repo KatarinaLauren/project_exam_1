@@ -53,10 +53,10 @@ getRockets();
                 <p><span class="bold">First flight:</span> ${resultsRockets[i].first_flight}</p>
                 <p><span class="bold">Cost to launch:</span> $ ${resultsRockets[i].cost_per_launch}</p>
                 </div>
-
-                <p class="rocket-description">${resultsRockets[i].description}</p>
+                <div class="rocket-description">
+                <p>${resultsRockets[i].description}</p>
                 <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
-                
+                </div>
         
                 <div class="rocket-images">
                 <img class="rocket-image" src="${images}"></img>
