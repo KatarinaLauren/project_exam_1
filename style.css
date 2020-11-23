@@ -250,7 +250,6 @@ footer a {
   border-radius: 20px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 10%;
 }
 
 .wide-image {
@@ -264,8 +263,7 @@ footer a {
 
 iframe {
   width: 97%;
-  margin: 0;
-  margin-bottom: 10%;
+  margin: 0 auto;
   border: 2px solid #000;
   border-radius: 20px;
 }
@@ -274,6 +272,14 @@ a.link-inside-text {
   padding: 0;
   display: inline;
   text-decoration: none;
+}
+
+.image-text {
+  font-size: 0.9em;
+  font-style: italic;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 /* -------------------REFERENCES--------------- */
@@ -351,13 +357,6 @@ a.link-inside-text {
 }
 /* ----------- LAUNCHES ----------- */
 
-/* .launches-background {
-  background-image: url(images/49965212542_399073e949_o.jpg);
-  background-attachment: initial;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 400px auto;
-} */
 .next-launch {
   margin-top: 40px;
   text-align: center;
@@ -413,17 +412,19 @@ a.link-inside-text {
   margin-bottom: 10px;
 }
 .sort-year {
-  width: 50%;
-  text-align: center;
+  width: 40%;
   font-size: 1em;
-  background-color: rgba(256, 256, 256, 0.05);
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border: 2px solid #fff;
+  padding: 5px;
+  font-weight: bold;
 }
 option {
   padding: 3px;
   font-weight: bold;
   margin: 1px;
+  margin-left: 30%;
 }
 .launch-div {
   width: 90%;
@@ -703,15 +704,13 @@ textarea {
     text-shadow: 1px 1px #000;
   }
   .sort-year {
-    margin-top: 20px;
-    width: 35%;
-    text-align: center;
-    font-size: 1.2em;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 30%;
+    font-size: 1.3em;
+    border: 2px solid #000;
+    padding: 8px;
   }
   option {
-    padding: 5px;
-    margin: 2px;
+    font-size: 0.9em;
   }
   .launch-div {
     width: 80%;
@@ -740,19 +739,6 @@ textarea {
     margin-top: 70px;
     background-color: rgba(0, 0, 0, 0.55);
   }
-
-  /* input {
-    width: 100%;
-    margin-top: 2px;
-    padding: 10px;
-    font-size: 1em;
-  } */
-
-  /* input:focus {
-    background-color: #cffce5;
-    outline: none;
-    border: #033629;
-  } */
 
   .submit-button {
     font-size: 1.2em;
