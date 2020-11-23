@@ -139,31 +139,31 @@ footer a {
 }
 
 .background1 {
-  background-image: url(images/1.jpg);
+  background-image: url(../images/1.jpg);
   background-size: auto 500px;
   padding-top: 30px;
   margin-top: -10%;
 }
 
 .background2 {
-  background-image: url(images/modis_wonderglobe_lrg_web.jpg);
+  background-image: url(../images/modis_wonderglobe_lrg_web.jpg);
 }
 
 .background3 {
-  background-image: url(images/pia22946-16_web.jpg);
+  background-image: url(../images/pia22946-16_web.jpg);
 }
 
 .background4 {
-  background-image: url(images/37912591295_7c30a77efd_o_web.jpg);
+  background-image: url(../images/37912591295_7c30a77efd_o_web.jpg);
 }
 
 .background5 {
-  background-image: url(images/47720639732_e04b2a9ed7_o_web.jpg);
+  background-image: url(../images/47720639732_e04b2a9ed7_o_web.jpg);
   background-size: 400px auto;
 }
 
 .background6 {
-  background-image: url(images/32394688095_a3339f3c6d_o_web.jpg);
+  background-image: url(../images/32394688095_a3339f3c6d_o_web.jpg);
   background-size: 600px auto;
   background-position: center bottom;
 }
@@ -662,7 +662,7 @@ textarea {
   /* ------------- LAUNCHES PAD ------------- */
 
   .launches-background {
-    background-image: url(images/2.jpg);
+    background-image: url(../images/2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -724,13 +724,14 @@ textarea {
   .contact-container {
     margin-bottom: -10%;
     margin-top: 0;
-    background-image: url(images/45473444314_413a344dcb_o.jpg);
+    background-image: url(../images/45473444314_413a344dcb_o.jpg);
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1500px auto;
     padding-top: 20px;
     padding-bottom: 100px;
+    min-height: 800px;
   }
 
   form {
