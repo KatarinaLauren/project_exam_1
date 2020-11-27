@@ -54,13 +54,13 @@ getRockets();
                 <p><span class="bold">Cost to launch:</span> $ ${resultsRockets[i].cost_per_launch}</p>
                 </div>
                 <div class="rocket-description">
-                <p>${resultsRockets[i].description}</p>
-                <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
+                <p>${resultsRockets[i].description}</p>    
                 </div>
         
                 <div class="rocket-images">
                 <img class="rocket-image" src="${images}"></img>
                 <p class="italic">${resultsRockets[i].name}</p>
+                <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
                 </div>
                 </div>
                  `

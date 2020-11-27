@@ -94,6 +94,14 @@ async function getLaunches() {
                     launchName = results[i].name; 
                 }
 
+                // GET PATCH IMG 
+
+                let patch = "../images/rocket.png"; 
+                
+                if(results[i].links.patch.small) {
+                    patch = results[i].links.patch.small; 
+                }
+
 
 
                 // GET &  DISPLAY ROCKET NAME  
@@ -119,9 +127,10 @@ async function getLaunches() {
 
                         launchContainer.innerHTML += `
                         <div class="launch-div ${launchYear} hide">
+                        <img class="launch-patch" src="${patch}" alt="launch patch">
                         <p class="bold"><i class="far fa-calendar"></i> ${formatLaunchDate}</p>
                         <p><i class="fas fa-rocket"></i> ${rocket}</p>
-                        <p>Launch name: ${launchName}</p>
+                        <p class="launch-name">Launch name: ${launchName}</p>
                         <p> ${launchSuccess}</p> 
                         <p>Details: ${launchDetails}.</p>
                         <a class="bold underline"href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>

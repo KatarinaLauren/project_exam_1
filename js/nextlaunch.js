@@ -38,8 +38,7 @@ getNextLaunch();
 
            
 
-            countDown.innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";;
+            countDown.innerHTML =`<p> ${days}d  ${hours}h ${minutes}m ${seconds}s</p>`;
 
 
             if (distance < 0) {
@@ -47,14 +46,6 @@ getNextLaunch();
                 countDown.innerHTML = "No planned launch";
               }
             }, 1000);
-
-
-            // countdownContainer.innerHTML += `
-            // <div class="">
-            // <h2>Next launch: ${formattedLaunchDate} </h2>
-            // <p>${resultsNextLaunch.details}</p>          
-            
-            // </div> `
             
         
     }

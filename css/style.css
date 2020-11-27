@@ -11,11 +11,18 @@ font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  padding: 0;
+  position: relative;
 }
 h1 {
   font-family: "Goldman", cursive;
@@ -38,9 +45,11 @@ h1 {
 
 .fail {
   color: #f20505;
+  font-weight: bold;
 }
 .success {
   color: green;
+  font-weight: bold;
 }
 .bold {
   font-weight: bold;
@@ -223,6 +232,10 @@ footer a {
   font-size: 1.3em;
   font-family: "Goldman", cursive;
 }
+.text-block2 h4 {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .text-block2 ul {
   text-align: left;
@@ -384,8 +397,8 @@ a.link-inside-text {
   max-width: 60%;
   color: lightyellow;
   margin: 0 auto;
+  font-size: 1.2em;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 5px #fff;
 }
 
 .launch-counter {
@@ -436,6 +449,18 @@ option {
   border-bottom: 2px solid #fff;
   border-radius: 20px;
   font-size: 0.85em;
+  position: relative;
+}
+
+.launch-patch {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 25%;
+}
+
+.launch-name {
+  width: 70%;
 }
 
 /* -----------CONTACT US ----------- */
@@ -577,12 +602,6 @@ textarea {
   .arrow {
     bottom: -10%;
   }
-  .left {
-    margin-left: 10%;
-  }
-  .right {
-    margin-right: 10%;
-  }
 
   .text-block1 {
     width: 40%;
@@ -606,13 +625,89 @@ textarea {
   }
 
   .inner-text {
-    width: 85%;
+    width: 90%;
   }
 
   iframe {
-    width: 80%;
+    width: 95%;
     min-height: 230px;
   }
+
+  .column {
+    column-count: 2;
+    column-width: 200px;
+    max-height: 400px;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .column p {
+    margin-top: 0;
+  }
+  .column ul {
+    margin-top: 0;
+  }
+  .left {
+    margin-left: 15%;
+  }
+  .right {
+    margin-right: 15%;
+  }
+  .text-block2 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 120%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0;
+  }
+  .text-block2 a {
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
+    font-size: 0.85em;
+    padding-bottom: 1em;
+    font-size: 0.75em;
+  }
+  .column {
+    column-count: 2;
+    column-width: 200px;
+    max-height: 400px;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .column p {
+    margin-top: 0;
+  }
+
+  .text-block2 ul {
+    font-size: 0.85em;
+  }
+
+  .text-block2 a.margin-25 {
+    margin-left: 25%;
+  }
+
+  .inner-text {
+    font-size: 0.85em;
+  }
+
+  .image-text {
+    font-size: 0.8em;
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .wide-frame {
+    width: 60%;
+    min-height: 250px;
+  }
+
   /* -------------------REFERENCES PAD--------------- */
 
   #references {
@@ -628,7 +723,7 @@ textarea {
     flex-wrap: wrap;
   }
   .rocket-div {
-    width: 47%;
+    width: 300px;
     font-size: 1em;
     margin: 0 auto;
     margin-top: 50px;
@@ -644,10 +739,11 @@ textarea {
 
   .rocket-description p {
     font-size: 0.9em;
+    width: 90%;
   }
 
   .rocket-description {
-    height: 190px;
+    height: 170px;
   }
 
   .rocket-image {
@@ -664,12 +760,12 @@ textarea {
   .launches-background {
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/launch.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: 1200px auto;
-    padding-top: 40px;
+    background-size: cover;
+    padding-top: 20px;
     padding-bottom: 40px;
     margin: 0;
     margin-bottom: -10%;
@@ -714,13 +810,22 @@ textarea {
   option {
     font-size: 0.9em;
   }
-  .launch-div {
+
+  .launch-container {
     width: 80%;
+    margin: 0 auto;
+  }
+  .launch-div {
+    width: 90%;
     padding-top: 2%;
     padding-bottom: 5%;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 1em;
   }
+  .launch-patch {
+    width: 22%;
+  }
+
   /* -----------CONTACT US PAD ----------- */
 
   .contact-container {
@@ -762,9 +867,42 @@ textarea {
   }
 }
 
-/* ----------- BIG SCREENS ------------------- */
+/* ----------- WIDE SCREENS ------------------- */
 
 @media only screen and (min-width: 900px) {
+  /* ------------------NAVBAR WIDE SCREENS ----------------- */
+
+  .sticky {
+    position: absolute;
+    max-height: 50px;
+    bottom: 300px;
+    z-index: 99;
+  }
+  .wide-screen-nav {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #navbar {
+    border: none;
+    border-top: 1px solid #a4a1a1;
+  }
+  a #active {
+    border: 8px solid #fff;
+  }
+
+  /* ------------------FOOTER WIDE SCREENS ----------------- */
+  footer {
+    height: 300px;
+  }
+  footer p {
+    width: 40%;
+    text-align: center;
+  }
+  footer a {
+    margin-top: 20px;
+  }
+
+  /* ----------- TIMELINE WIDE SCREENS ------------------- */
   .background1,
   .background2,
   .background3,
@@ -790,7 +928,7 @@ textarea {
     position: relative;
   }
   h1 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .container {
@@ -814,46 +952,85 @@ textarea {
   }
   .text-block2 {
     width: 70%;
-    margin: 0 auto;
-    font-size: 120%;
-    margin-top: 2%;
-    padding-bottom: 2%;
   }
-  .text-block2 a {
+
+  /* ----------------ROCKETS WIDE SCREENS---------------------  */
+
+  .rocket-div {
+    width: 650px;
+    column-count: 2;
+    column-width: 250px;
+    max-height: 600px;
+  }
+
+  .rocket-description {
+    height: 170px;
+  }
+
+  .rocket-images p {
+    margin-top: -5%;
+  }
+  /* ------------- LAUNCHES WIDE SCREEN ------------- */
+
+  .launches-background {
+    max-width: 1700px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    margin-bottom: -10%;
+  }
+  .next-launch {
+    margin-top: 70px;
+  }
+  .launches-background h1 {
+    margin-top: 0;
+    padding-top: 1%;
+  }
+
+  .countdown {
+    width: 400px;
+    font-size: 1.7em;
+  }
+  .countdown p {
     margin: 0;
     padding: 0;
-    padding-top: 2%;
-    font-size: 0.85em;
-    padding-bottom: 1em;
-  }
-  .column {
-    column-count: 2;
-    column-width: 200px;
-    max-height: 400px;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 
-  .column p {
-    margin-top: 0;
+  .launch-counter {
+    width: 500px;
+    max-width: 50%;
+  }
+  .sort {
+    margin-top: 5%;
+  }
+  .sort label {
+    font-size: 1.7em;
+  }
+  .sort-year {
+    width: 200px;
   }
 
-  .text-block2 ul {
-    font-size: 0.85em;
+  .launch-container {
+    width: 750px;
+    margin: 0 auto;
   }
 
-  .text-block2 a.margin-25 {
-    margin-left: 25%;
+  .launch-div {
+    width: 650px;
+  }
+  .launch-patch {
+    width: 23%;
   }
 
-  .inner-text {
-    font-size: 0.85em;
+  /* -------------------REFERENCES WIDE SCREENS--------------- */
+
+  div#references {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .image-text {
-    font-size: 0.8em;
-    width: 85%;
-    margin-top: 5px;
-    margin-bottom: 0;
+  .links {
+    margin-left: 0;
   }
 }
