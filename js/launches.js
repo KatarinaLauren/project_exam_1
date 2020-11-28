@@ -38,7 +38,7 @@ async function getLaunches() {
             <h2>Launches</h2>
             <p>Since 2006, SpaceX has launched <span class="bold big"> ${results.length} </span>rockets</p>
             <p>Successful launches:<span class="bold big"> ${counterSuccess}</span></p>
-            <p>Failed launches: <span class="bold big">${counterFail}</span></p>`
+            <p>Failed launches: <span class="bold big">${counterFail}</span></p>`; 
     }
 
     function createHTMLLaunches(results) {
@@ -62,7 +62,7 @@ async function getLaunches() {
                        
             }
                 // SET DETAILS VALUE 
-            let launchDetails ="No information available"
+            let launchDetails ="No information available"; 
 
             if(results[i].details){
                 launchDetails = results[i].details; 
@@ -102,7 +102,7 @@ async function getLaunches() {
                     const rocketResponse = await fetch(rocketUrl); 
                     const rocketResults = await rocketResponse.json(); 
 
-                    let rocket = "Unknown"
+                    let rocket = "Unknown"; 
 
                     if(rocketResults.name) {
                         rocket = rocketResults.name; 
@@ -119,7 +119,7 @@ async function getLaunches() {
                     <p> ${launchSuccess}</p> 
                     <p>Details: ${launchDetails}.</p>
                     <a class="bold underline" href="${launchVideo}" target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
-                    </div>`
+                    </div>`; 
                         
                         const launchDivs = document.querySelectorAll(".launch-div"); 
 

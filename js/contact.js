@@ -28,7 +28,7 @@ function formValidation(event) {
     }
 
     if((checkLength(firstName.value, 0)), (checkLength(lastName.value, 3)), (validateEmail(email.value)) ){
-        contactForm.innerHTML = `<p class="thanks-message">Thank you for your message!</p>`
+        contactForm.innerHTML = `<p class="thanks-message">Thank you for your message!</p>`; 
     }
 
 }

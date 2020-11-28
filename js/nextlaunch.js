@@ -1,5 +1,5 @@
 
- var countDown = document.querySelector(".countdown")
+ var countDown = document.querySelector(".countdown"); 
 
 const url3 = "https://api.spacexdata.com/v4/launches/next"; 
 
@@ -14,7 +14,7 @@ async function getNextLaunch() {
     } catch(error) {
         console.log(error); 
         countDown.innerHTML = "Next launch not found"; 
-        countDown.style.color="red"
+        countDown.style.color="red"; 
     
     }
 

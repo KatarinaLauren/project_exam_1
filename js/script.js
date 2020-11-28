@@ -1,5 +1,5 @@
 
-const containers = document.querySelectorAll(".container")
+const containers = document.querySelectorAll(".container"); 
 
 for(let i = 0; i < containers.length; i++) {
     containers[i].onclick = function () {

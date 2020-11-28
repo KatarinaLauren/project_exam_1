@@ -49,8 +49,7 @@ getRockets();
                 <p class="italic">${resultsRockets[i].name}</p>
                 <a href="${resultsRockets[i].wikipedia}" target="_blank">Read more on Wikipedia</a>
                 </div>
-                </div>
-                 `
+                </div>`; 
             }
         }
     }
