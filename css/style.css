@@ -873,21 +873,12 @@ textarea {
 
 @media only screen and (min-width: 900px) {
   /* ------------------NAVBAR WIDE SCREENS ----------------- */
-  /* 
-  .sticky {
-    position: absolute;
-    max-height: 50px;
-    bottom: 300px;
-    z-index: 99;
-  } */
+
   .wide-screen-nav {
     width: 60%;
     margin: 0 auto;
   }
-  #navbar {
-    /* border: none; */
-    /* border-top: 1px solid #a4a1a1; */
-  }
+
   a #active {
     border: 8px solid #fff;
   }
