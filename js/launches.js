@@ -86,7 +86,7 @@ async function getLaunches() {
             }
                 // GET PATCH IMG 
 
-            let patch = "..//images/rocket.png"; 
+            let patch = "http://lauren.no/project_exam/spacex-microsite/images/rocket.png"; 
                 
             if(results[i].links.patch.small) {
                 patch = results[i].links.patch.small; 

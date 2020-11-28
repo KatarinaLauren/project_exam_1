@@ -95,6 +95,10 @@ a {
   padding: 2% 0;
   font-size: 0.8em;
 }
+#navbar a:hover {
+  text-decoration: underline;
+}
+
 #active {
   font-weight: bold;
   border: 2px solid #fff;
@@ -246,9 +250,11 @@ footer a {
   display: block;
   font-size: 1em;
   color: #000;
-  text-decoration: underline;
   padding: 1.5em;
   margin: 0;
+}
+.text-block2 a:hover {
+  text-decoration: underline;
 }
 
 .inner-text {
