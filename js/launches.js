@@ -133,7 +133,7 @@ async function getLaunches() {
                         <p class="launch-name">Launch name: ${launchName}</p>
                         <p> ${launchSuccess}</p> 
                         <p>Details: ${launchDetails}.</p>
-                        <a class="bold underline"href="${launchVideo} target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
+                        <a class="bold underline" href="${launchVideo}" target="_blank"><i class="fab fa-youtube"></i> ${launchVideoMessage}</a>
                         </div>
                         `
                         const launchDivs = document.querySelectorAll(".launch-div"); 

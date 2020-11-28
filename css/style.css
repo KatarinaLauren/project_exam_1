@@ -472,6 +472,7 @@ option {
 
 form {
   width: 93%;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 15%;
   padding: 5% 2%;
@@ -843,6 +844,7 @@ textarea {
 
   form {
     width: 60%;
+    min-width: 450px;
     padding-top: 2%;
     margin-top: 70px;
     background-color: rgba(0, 0, 0, 0.55);
@@ -871,20 +873,20 @@ textarea {
 
 @media only screen and (min-width: 900px) {
   /* ------------------NAVBAR WIDE SCREENS ----------------- */
-
+  /* 
   .sticky {
     position: absolute;
     max-height: 50px;
     bottom: 300px;
     z-index: 99;
-  }
+  } */
   .wide-screen-nav {
     width: 60%;
     margin: 0 auto;
   }
   #navbar {
-    border: none;
-    border-top: 1px solid #a4a1a1;
+    /* border: none; */
+    /* border-top: 1px solid #a4a1a1; */
   }
   a #active {
     border: 8px solid #fff;
@@ -955,7 +957,6 @@ textarea {
   }
 
   /* ----------------ROCKETS WIDE SCREENS---------------------  */
-
   .rocket-div {
     width: 650px;
     column-count: 2;
@@ -1032,5 +1033,24 @@ textarea {
 
   .links {
     margin-left: 0;
+  }
+
+  /* -----------CONTACT US WIDE SCREENS ----------- */
+
+  .contact-container {
+    background-position: center center;
+    background-size: cover;
+  }
+  .contact-container h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  form {
+    width: 550px;
+    margin-bottom: 100px;
+  }
+  label {
+    font-size: 1em;
   }
 }
