@@ -1,47 +1,34 @@
 const rocketContainer = document.querySelector(".rocket-container");
-
-
 const url2 = "https://api.spacexdata.com/v4/rockets"; 
 
 async function getRockets() {
     try {
         const responseRockets = await fetch(url2); 
         const resultsRockets = await responseRockets.json(); 
-        console.log(resultsRockets); 
+        // console.log(resultsRockets); 
 
         createHTMLRockets(resultsRockets); 
         
     } catch(error) {
         console.log(error); 
         rocketContainer.innerHTML = "Error"; 
-    
     }
 }   
+
 getRockets(); 
 
     function createHTMLRockets(resultsRockets) {
         rocketContainer.innerHTML= ""; 
-    
-        
 
         for (let i = 0; i < resultsRockets.length; i++) {
-
-
-
             var flickrImages = resultsRockets[i].flickr_images; 
-            // console.log(flickrImages); 
-  
 
             for (let j = 0; j < flickrImages.length; j++) {
-
-                // console.log(flickrImages[j])
-
                 if (j ===1) {
                     break; 
-                }
-                // console.log(flickrImages[0]); 
-                const images = flickrImages[0]; 
+                } 
 
+                const images = flickrImages[0]; 
 
                 rocketContainer.innerHTML += `
                 <div class="rocket-div">
@@ -64,15 +51,6 @@ getRockets();
                 </div>
                 </div>
                  `
-
-        
-
-                
-
-
-
-          
-
             }
         }
     }
