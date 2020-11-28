@@ -7,7 +7,7 @@ async function getLaunches() {
     try {
         const response = await fetch(url); 
         const results = await response.json(); 
-        console.log(results); 
+        // console.log(results); 
 
         createHTMLCounter(results); 
         createHTMLLaunches(results); 
