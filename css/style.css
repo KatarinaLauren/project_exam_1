@@ -251,8 +251,6 @@ footer a {
   color: #000;
   padding: 1.5em;
   margin: 0;
-}
-.text-block2 a:hover {
   text-decoration: underline;
 }
 
@@ -949,6 +947,14 @@ textarea {
   }
   .text-block2 {
     width: 70%;
+  }
+
+  .text-block2 a {
+    text-decoration: none;
+  }
+
+  .text-block2 a:hover {
+    text-decoration: underline;
   }
 
   /* ----------------ROCKETS WIDE SCREENS---------------------  */
