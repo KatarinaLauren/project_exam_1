@@ -247,7 +247,7 @@ footer a {
 }
 .text-block2 a {
   display: block;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #000;
   padding: 1.5em;
   width: 100%;
@@ -268,6 +268,7 @@ footer a {
   border-radius: 20px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 3%;
 }
 
 .wide-image {
@@ -287,6 +288,7 @@ iframe {
 }
 
 a.link-inside-text {
+  width: 90%;
   padding: 0;
   display: inline;
   text-decoration: none;
@@ -338,7 +340,7 @@ a.link-inside-text {
 
 .rocket-info {
   background-color: rgba(256, 256, 256, 0.05);
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -395,7 +397,7 @@ a.link-inside-text {
 .countdown {
   font-family: "Goldman", cursive;
   background-color: rgba(256, 256, 256, 0.05);
-  padding: 5%;
+  padding: 2%;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   border-radius: 20px;
@@ -637,10 +639,14 @@ textarea {
     font-size: 1.5em;
     margin-top: 0;
   }
-  .text-block2 a {
+  .site-links a {
     display: inline-block;
-    width: 40%;
     margin: 0 auto;
+    width: 40%;
+    font-size: 0.9em;
+  }
+  a.link-inside-text {
+    width: 90%;
   }
 
   .text-block2 ul {
@@ -675,6 +681,9 @@ textarea {
     margin-bottom: 0;
     text-align: center;
   }
+  .text-block2 a {
+    font-size: 0.9em;
+  }
 
   .wide-frame {
     width: 60%;
@@ -707,7 +716,7 @@ textarea {
   }
 
   .rocket-info {
-    width: 60%;
+    width: 70%;
   }
 
   .rocket-info p {
@@ -752,7 +761,7 @@ textarea {
   }
 
   .next-launch a {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .next-launch h3 {
     font-size: 1.3em;
@@ -761,11 +770,10 @@ textarea {
   .countdown {
     background-color: rgba(0, 0, 0, 0.6);
     max-width: 50%;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-shadow: None;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 300;
-    padding: 3%;
   }
 
   .launch-counter {
