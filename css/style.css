@@ -206,7 +206,7 @@ footer a {
 
 .text-block1 {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 50%;
+  width: 60%;
   margin-top: 15%;
 }
 .text-block1 h3 {
@@ -324,6 +324,7 @@ a.link-inside-text {
 .rocket-div {
   background-color: rgba(256, 256, 256, 0.05);
   width: 90%;
+  max-width: 350px;
   font-size: 0.85em;
   margin: 0 auto;
   margin-top: 70px;
@@ -709,14 +710,15 @@ textarea {
     flex-wrap: wrap;
   }
   .rocket-div {
-    width: 300px;
+    width: 350px;
+    max-width: 350px;
     font-size: 1em;
     margin: 0 auto;
     margin-top: 50px;
   }
 
   .rocket-info {
-    width: 70%;
+    width: 75%;
   }
 
   .rocket-info p {
@@ -935,6 +937,7 @@ textarea {
   /* ----------------ROCKETS WIDE SCREENS---------------------  */
   .rocket-div {
     width: 650px;
+    max-width: 650px;
     column-count: 2;
     column-width: 250px;
     max-height: 600px;
