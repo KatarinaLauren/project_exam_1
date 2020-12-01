@@ -742,6 +742,12 @@ textarea {
     text-align: center;
     font-size: 0.9em;
   }
+  .rocket-container a {
+    text-decoration: none;
+  }
+  .rocket-container a:hover {
+    text-decoration: underline;
+  }
 
   /* ------------- LAUNCHES PAD ------------- */
 
@@ -764,6 +770,10 @@ textarea {
 
   .next-launch a {
     font-size: 0.8em;
+    text-decoration: none;
+  }
+  .next-launch a:hover {
+    text-decoration: underline;
   }
   .next-launch h3 {
     font-size: 1.3em;
